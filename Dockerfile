@@ -15,7 +15,8 @@ RUN apt-get install -q -y sloccount
 
 # pyenv
 RUN apt-get install python-pip
-RUN pip install pyenv
+RUN pip install --egg pyenv
+RUN pip install virtualenv
   
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
