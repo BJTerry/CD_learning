@@ -14,6 +14,7 @@ RUN apt-get install -q -y git
 RUN apt-get install -q -y sloccount
 
 # pyenv
+RUN apt-get install python-pip
 RUN pip install pyenv
   
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
