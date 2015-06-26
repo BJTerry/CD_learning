@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Viktor Farcic, "viktor@farcic.com"
+MAINTAINER BJ Terry, ""
  
 RUN echo deb http://archive.ubuntu.com/ubuntu trusty universe >> /etc/apt/sources.list
 RUN apt-get update && apt-get clean
