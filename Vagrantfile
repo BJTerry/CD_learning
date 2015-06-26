@@ -5,6 +5,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = "ubuntu/trusty64"
+    config.vm.provision :shell, inline: "apt-get update -y -q"
     config.vm.provision "docker" do |d|
       d.run "bjterry/cd-learning",
             args: "-d -p 0.0.0.0:49153:8080"
