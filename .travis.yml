@@ -1,7 +1,8 @@
 language: python
 python:
   - "3.4"
-install: "pip install -r requirements.txt"
-install: "pip install pyflakes"
-install: "pip install pep8"
+install
+  - "pip install -r requirements.txt"
+  - "pip install pyflakes"
+  - "pip install pep8"
 script: "cd mysite; python manage.py jenkins --enable-coverage"
