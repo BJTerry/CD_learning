@@ -91,5 +91,5 @@ JENKINS_TASKS = (
 )
 
 PROJECT_APPS = (
-    'mysite'
+    'mysite',
 )
