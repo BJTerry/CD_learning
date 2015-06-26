@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.4"
+before_install:
+  - sudo apt-get install -qq sloccount
 install:
   - "pip install -r requirements.txt"
   - "pip install pyflakes"
