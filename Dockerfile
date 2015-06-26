@@ -12,6 +12,9 @@ RUN apt-get install -q -y git
 
 # SLOCCount
 RUN apt-get install -q -y sloccount
+
+# pyenv
+RUN pip install pyenv
   
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
